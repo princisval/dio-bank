@@ -1,4 +1,4 @@
 set -e
 
 poetry run flask --app src.app db upgrade
-poetry run gunicorn.wsgi:app
+poetry run gunicorn src.wsgi:app
